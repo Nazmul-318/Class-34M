@@ -142,8 +142,9 @@ ul.our-primary-menu li ul li a:hover{
 
 /* slider / Banner css */
 
-.Slider-section .container-fluid{
+body .Slider-section .container-fluid{
    overflow: hidden;
+   max-width: 1366 !important;
 }
 
 .slider-content-wrap{
@@ -360,7 +361,7 @@ ul.our-primary-menu li ul li a:hover{
 /* Start Slider-two Section */
 
 .slider-two-section{
-    background: url(img/video-bg.jpg) rgba(0, 0, 0, 0.75) no-repeat top center;
+    background: url(img/video-bg.jpg) rgba(0, 0, 0, 0.7) no-repeat top center;
     background-size: cover; 
     padding: 200px 0;  
     margin-top: 50px;
@@ -430,21 +431,26 @@ ul.our-primary-menu li ul li a:hover{
     top: 0;
     left: 0;
     background: transparent;
-    border: 8px double #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
     animation: playbtn 1.6s ease-in-out infinite;   
 }
 @keyframes playbtn{
-    0%,30%{
+    0%{
         transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1);
         opacity: 1;
+
     }
     50%{
-        transform: scale(1);
-        opacity: .7;
+        transform: scale(1.5);
+        opacity: .2;
     }
     75%{
-        transform: scale(1.5);
+        transform: scale(1.7);
         opacity: .3;
     }
     100%{
